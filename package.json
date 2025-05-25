@@ -1,0 +1,36 @@
+{
+  "name": "clean-ai-text-lib",
+  "version": "1.0.0",
+  "description": "A library for cleaning AI-generated text by removing or transforming various artifacts and formatting issues",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "webpack",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "text",
+    "clean",
+    "formatting",
+    "unicode",
+    "sanitize"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "terser-webpack-plugin": "^5.3.14",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
